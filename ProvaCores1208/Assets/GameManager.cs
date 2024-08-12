@@ -45,7 +45,8 @@ public class GameManager : MonoBehaviour
             else
             {
                 erros++;
-                UImanager.AtualizarErros();
+                UImanager.AtualizarErros();//erro
+
                 GerarSequencia();
             }
         }
