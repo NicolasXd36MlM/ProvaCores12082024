@@ -23,11 +23,7 @@ public class UImanager : MonoBehaviour
         }
     }
 
-    public void atualizarAcertos ()
-    {
-
-
-    }
+    public void atualizarAcertos(int acertouTexto) => acertouTexto.ToString();
 
     // Update is called once per frame
     void Update()
