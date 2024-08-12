@@ -25,6 +25,9 @@ public class UImanager : MonoBehaviour
 
     public void atualizarAcertos(int acertouTexto) => acertouTexto.ToString();
 
+    public void atualizarErros(int errouTexto) => errouTexto.ToString();
+
+   public void LimparTexto (int texto) => texto.ToString("");
     // Update is called once per frame
     void Update()
     {
