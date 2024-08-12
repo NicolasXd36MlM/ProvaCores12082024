@@ -16,17 +16,25 @@ public class UImanager : MonoBehaviour
     {
         for (int i = 0; i < botoes.Length; i++)
         {
-            // botoes[i].GameManager.ChecarCor.onClick;
+            botoes[i].GameManager.ChecarCor.onClick;
 
         }
     }
 
-    public void atualizarAcertos(int acertouTexto) => acertouTexto.ToString();
+    public void atualizarAcertos(int acertouTexto)
+    {
+        acertouTexto.ToString();
+    }
 
-    public void atualizarErros(int errouTexto) => errouTexto.ToString();
+    public void atualizarErros(int errouTexto)
+    {
+        errouTexto.ToString();
+    }
 
-    public void LimparTexto(int texto) => texto.ToString("");
-
+    public void LimparTexto(int texto)
+    {
+        texto.ToString("");
+    }
     public void AtualizarSequencia(string cor)
     {
         cor = cor.ToString();
