@@ -28,9 +28,10 @@ public class UImanager : MonoBehaviour
     public void atualizarErros(int errouTexto) => errouTexto.ToString();
 
    public void LimparTexto (int texto) => texto.ToString("");
-    // Update is called once per frame
-    void Update()
+
+    public void AtualizarSequencia(string cor)
     {
-        
+     cor = cor.ToString();
+
     }
 }
