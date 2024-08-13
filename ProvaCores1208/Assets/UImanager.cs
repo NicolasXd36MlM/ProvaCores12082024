@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,32 +14,24 @@ public class UImanager : MonoBehaviour
     TextMeshProUGUI sequenciaTexto, acertouTexto, errouTexto;
     #endregion
     // Start is called before the first frame update
-    public void Start()
+    void Start()
     {
-        for (int i = 0; i < botoes.Length; i++)
+        for (int  i= 0; i < botoes.Length; i++)
         {
-            botoes[i] += GameManager.ChecarCor(i); //erro que eu preciso tirar duvida
-
+            // botoes[i].GameManager.ChecarCor.onClick;
+           
         }
     }
 
-    public void atualizarAcertos(int acertouTexto)
-    {
-        acertouTexto.ToString();
-    }
+    public void atualizarAcertos(int acertouTexto) => acertouTexto.ToString();
 
-    public void atualizarErros(int errouTexto)
-    {
-        errouTexto.ToString();
-    }
+    public void atualizarErros(int errouTexto) => errouTexto.ToString();
 
-    public void LimparTexto(int texto)
-    {
-        texto.ToString("");
-    }
+   public void LimparTexto (int texto) => texto.ToString("");
+
     public void AtualizarSequencia(string cor)
     {
-        cor = cor.ToString();
+     cor = cor.ToString();
 
     }
 }
